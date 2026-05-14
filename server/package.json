@@ -7,7 +7,7 @@
     "start": "node hocuspocus.js"
   },
   "dependencies": {
-    "@hocuspocus/server": "^4.0.0"
+    "@hocuspocus/server": "^2.13.0"
   },
   "engines": {
     "node": ">=18"
