@@ -11,7 +11,7 @@ type TableItem = {
   status: string
   icon: string | null
   priority?: string
-  dueDate?: string | null
+  dueDate?: Date | string | null
   properties?: string | null
 }
 

@@ -9,7 +9,7 @@ type TimelineItem = {
   title: string
   icon: string | null
   status: string
-  dueDate?: string | null
+  dueDate?: Date | string | null
   createdAt?: string
 }
 

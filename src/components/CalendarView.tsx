@@ -9,7 +9,7 @@ type CalendarItem = {
   id: string
   title: string
   icon: string | null
-  dueDate?: string | null
+  dueDate?: Date | string | null
 }
 
 export default function CalendarView({ boardId, items }: { boardId: string; items: CalendarItem[] }) {

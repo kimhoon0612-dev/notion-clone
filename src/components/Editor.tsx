@@ -148,7 +148,7 @@ function EditorInner({ page, provider }: { page: EditorProps['page'], provider: 
       StarterKit.configure({
         codeBlock: false,
         history: false, // history is handled by Yjs
-      }),
+      } as any),
       Collaboration.configure({
         document: provider.doc,
       }),

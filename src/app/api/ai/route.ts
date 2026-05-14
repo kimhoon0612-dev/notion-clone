@@ -35,7 +35,7 @@ export async function POST(req: NextRequest) {
       prompt,
     })
 
-    return result.toDataStreamResponse()
+    return result.toTextStreamResponse()
   } catch (err) {
     console.error(err)
     return new NextResponse("Error", { status: 500 })

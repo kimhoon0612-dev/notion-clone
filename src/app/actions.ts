@@ -213,7 +213,7 @@ export async function getPageWithAncestors(id: string) {
   const ancestors: { id: string; title: string; icon: string | null }[] = []
   let currentId: string | null = id
   while (currentId) {
-    const page = await prisma.page.findUnique({
+    const page: { id: string; title: string; icon: string | null; parentId: string | null } | null = await prisma.page.findUnique({
       where: { id: currentId },
       select: { id: true, title: true, icon: true, parentId: true },
     })

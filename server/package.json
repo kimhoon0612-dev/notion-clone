@@ -1,0 +1,15 @@
+{
+  "name": "notion-clone-ws",
+  "version": "1.0.0",
+  "description": "WebSocket collaboration server for Notion Clone",
+  "main": "hocuspocus.js",
+  "scripts": {
+    "start": "node hocuspocus.js"
+  },
+  "dependencies": {
+    "@hocuspocus/server": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
